@@ -90,7 +90,7 @@ class MyApp extends StatelessWidget {
             decoration: const BoxDecoration(
               color: Color(0xFFFAFAFA),
               borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(20.0),
+              topLeft: Radius.circular(35.0),
               ),
             ),
             child: Column(
@@ -151,18 +151,17 @@ class MyApp extends StatelessWidget {
                             end: Alignment.topLeft,
                           ),
                           borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(20.0),
-                        bottomRight: Radius.circular(5.0),
-                        topLeft: Radius.circular(5.0),
-                        topRight: Radius.circular(5.0)),
+                              bottomLeft: Radius.circular(20.0),
+                              bottomRight: Radius.circular(5.0),
+                              topLeft: Radius.circular(5.0),
+                              topRight: Radius.circular(5.0)),
                         ),
                         child: const Center(
                           child: Text('TDS',
                               style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                                color: Colors.white
-                              )),
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Colors.white)),
                         ),
                       ),
                       Container(
@@ -183,20 +182,18 @@ class MyApp extends StatelessWidget {
                             begin: Alignment.bottomRight,
                             end: Alignment.topLeft,
                           ),
-                          borderRadius:
-                               BorderRadius.only(
-                        bottomLeft: Radius.circular(20.0),
-                        bottomRight: Radius.circular(5.0),
-                        topLeft: Radius.circular(5.0),
-                        topRight: Radius.circular(5.0)),
+                          borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(20.0),
+                              bottomRight: Radius.circular(5.0),
+                              topLeft: Radius.circular(5.0),
+                              topRight: Radius.circular(5.0)),
                         ),
                         child: const Center(
                           child: Text('EC',
                               style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                                color: Colors.white
-                              )),
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Colors.white)),
                         ),
                       ),
                       Container(
@@ -215,18 +212,17 @@ class MyApp extends StatelessWidget {
                             end: Alignment.topRight,
                           ),
                           borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(5.0),
-                        bottomRight: Radius.circular(5.0),
-                        topLeft: Radius.circular(5.0),
-                        topRight: Radius.circular(20.0)),
+                              bottomLeft: Radius.circular(5.0),
+                              bottomRight: Radius.circular(5.0),
+                              topLeft: Radius.circular(5.0),
+                              topRight: Radius.circular(20.0)),
                         ),
                         child: const Center(
                           child: Text('Turbidity',
                               style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                                color: Colors.white
-                              )),
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Colors.white)),
                         ),
                       ),
                     ],
