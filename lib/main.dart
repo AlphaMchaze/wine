@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
                 )),
             centerTitle: true,
             backgroundColor:
-                const Color(0xFFF1F3F7), // Set app bar background color
+                const Color(0xFFF1F3F7),
           ),
           body: Column(
             mainAxisAlignment: MainAxisAlignment.start,
