@@ -211,8 +211,8 @@ class MyApp extends StatelessWidget {
                               Color(0xFFFEB095)
                             ],
                             stops: [0.1, 0.5, 0.7, 1.0],
-                            begin: Alignment.bottomRight,
-                            end: Alignment.topLeft,
+                            begin: Alignment.bottomLeft,
+                            end: Alignment.topRight,
                           ),
                           borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(5.0),
