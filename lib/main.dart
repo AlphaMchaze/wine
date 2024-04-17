@@ -15,9 +15,10 @@ class MyApp extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             title: const Text('WINE',
-             style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 35,)),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 35,
+                )),
             centerTitle: true,
             backgroundColor:
                 const Color(0xFFF1F3F7), // Set app bar background color
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
               // Logo
               Padding(
                 padding: const EdgeInsets.only(
-                  left: 90,
+                  left: 65,
                 ),
                 child: Image.asset(
                   'images/logo.png',
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
                   height: 100.0,
                 ),
               ),
-        
+
               // Container with circle avatar
               const SizedBox(
                 height: 35,
@@ -83,12 +84,11 @@ class MyApp extends StatelessWidget {
               ),
             ],
           ),
-          backgroundColor:
-              const Color(0xFFF1F3F7), 
+          backgroundColor: const Color(0xFFF1F3F7),
           bottomNavigationBar: Container(
             height: 150.0,
             decoration: const BoxDecoration(
-              color:  Color(0xFFFAFAFA),
+              color: Color(0xFFFAFAFA),
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20.0),
               ),
@@ -103,20 +103,23 @@ class MyApp extends StatelessWidget {
                       Container(
                         width: 80.0,
                         height: 80.0,
-                        decoration:const BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
-                            colors:[
-                                Color(0xFFF97b81),
-                                Color(0xFFFC968B),
-                                Color(0xFFFEAA94),
-                                Color(0xFFFEB095)
+                            colors: [
+                              Color(0xFFF97b81),
+                              Color(0xFFFC968B),
+                              Color(0xFFFEAA94),
+                              Color(0xFFFEB095)
                             ],
-                            stops: [0.1,0.5,0.7,1.0],
-                            begin:Alignment.bottomRight,
+                            stops: [0.1, 0.5, 0.7, 1.0],
+                            begin: Alignment.bottomRight,
                             end: Alignment.topLeft,
-                             ),
-                          borderRadius:
-                              BorderRadius.only(topRight: Radius.circular(20.0)),
+                          ),
+                          borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(5.0),
+                              bottomRight: Radius.circular(5.0),
+                              topLeft: Radius.circular(5.0),
+                              topRight: Radius.circular(20)),
                         ),
                         child: const Center(
                           child: Text(
@@ -124,6 +127,7 @@ class MyApp extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 15,
+                              color: Colors.white,
                             ),
                           ),
                         ),
@@ -131,25 +135,33 @@ class MyApp extends StatelessWidget {
                       Container(
                         width: 80.0,
                         height: 80.0,
-                        decoration:const BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
-                            colors:[
-                                Color(0xFF5B62DE),
-                                Color(0xFF7287E7),
-                                Color(0xFF788DE8),
+                            colors: [
+                              Color(0xFF5B62DE),
+                              Color(0xFF7287E7),
+                              Color(0xFF788DE8),
                             ],
-                            stops: [0.3,0.7,1.2,],
-                            begin:Alignment.bottomRight,
+                            stops: [
+                              0.3,
+                              0.7,
+                              1.2,
+                            ],
+                            begin: Alignment.bottomRight,
                             end: Alignment.topLeft,
-                             ),
-                          borderRadius:
-                              BorderRadius.only(bottomLeft: Radius.circular(20)),
+                          ),
+                          borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(20.0),
+                        bottomRight: Radius.circular(5.0),
+                        topLeft: Radius.circular(5.0),
+                        topRight: Radius.circular(5.0)),
                         ),
                         child: const Center(
                           child: Text('TDS',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
+                                color: Colors.white
                               )),
                         ),
                       ),
@@ -157,24 +169,33 @@ class MyApp extends StatelessWidget {
                         width: 80.0,
                         height: 80.0,
                         decoration: const BoxDecoration(
-                           gradient: LinearGradient(
-                            colors:[
-                                Color(0xFFFF568B),
-                                Color(0xFFFF82A9),
-                                Color(0xFFFD8AAE),
+                          gradient: LinearGradient(
+                            colors: [
+                              Color(0xFFFF568B),
+                              Color(0xFFFF82A9),
+                              Color(0xFFFD8AAE),
                             ],
-                            stops: [0.4,0.8,1.5,],
-                            begin:Alignment.bottomRight,
+                            stops: [
+                              0.4,
+                              0.8,
+                              1.5,
+                            ],
+                            begin: Alignment.bottomRight,
                             end: Alignment.topLeft,
-                             ),
+                          ),
                           borderRadius:
-                              BorderRadius.only(topLeft: Radius.circular(20)),
+                               BorderRadius.only(
+                        bottomLeft: Radius.circular(20.0),
+                        bottomRight: Radius.circular(5.0),
+                        topLeft: Radius.circular(5.0),
+                        topRight: Radius.circular(5.0)),
                         ),
                         child: const Center(
                           child: Text('EC',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
+                                color: Colors.white
                               )),
                         ),
                       ),
@@ -182,24 +203,29 @@ class MyApp extends StatelessWidget {
                         width: 80.0,
                         height: 80.0,
                         decoration: const BoxDecoration(
-                           gradient: LinearGradient(
-                            colors:[
-                                Color(0xFFFE7723),
-                                Color(0xFFF9F7EB),
-                                Color(0xFFFB8283),
+                          gradient: LinearGradient(
+                            colors: [
+                              Color(0xFFF97b81),
+                              Color(0xFFFC968B),
+                              Color(0xFFFEAA94),
+                              Color(0xFFFEB095)
                             ],
-                            stops: [0.2,0.4,1.0,],
-                            begin:Alignment.bottomLeft,
-                            end: Alignment.topRight,
-                             ),
-                          borderRadius:
-                              BorderRadius.only(bottomRight: Radius.circular(20)),
+                            stops: [0.1, 0.5, 0.7, 1.0],
+                            begin: Alignment.bottomRight,
+                            end: Alignment.topLeft,
+                          ),
+                          borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(5.0),
+                        bottomRight: Radius.circular(5.0),
+                        topLeft: Radius.circular(5.0),
+                        topRight: Radius.circular(20.0)),
                         ),
                         child: const Center(
                           child: Text('Turbidity',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
+                                color: Colors.white
                               )),
                         ),
                       ),
