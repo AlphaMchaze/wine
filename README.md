@@ -1,4 +1,4 @@
-# wine
+# curiosity 
 
 A new Flutter project.
 
